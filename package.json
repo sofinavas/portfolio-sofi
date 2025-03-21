@@ -1,14 +1,21 @@
 {
   "name": "portfolio-dev",
-  "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "```sh npm create astro@latest -- --template basics ```",
+  "main": "index.js",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "astro": "^5.4.3"
+    "@astrojs/tailwind": "^6.0.1",
+    "@fontsource-variable/onest": "^5.2.6",
+    "astro": "^5.5.4",
+    "astro-robots-txt": "^1.0.0"
   }
 }

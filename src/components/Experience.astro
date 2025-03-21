@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "2024 - Actualmente",
+    title: "Desarrolladora Front-End Junior / Especialista en Email Marketing",
+    description:
+      "Responsable del desarrollo y mantenimiento de landing pages y correos electrónicos utilizando HTML, CSS y JavaScript. Implementación de cambios y actualizaciones en sitios web existentes. Creación y gestión de formularios con WordPress y ActiveCampaign.",
+    company: "Deviento",
+    link: "https://deviento.com/ES/index.html",
+  },
+
+  {
+    date: "2000 - 2023",
+    title: "Profesora de Inglés ",
+    description: "Docente de inglés en el colegio Bilingüe Mark Twain.",
+    company: "Colegio Bilingüe Mark Twain",
+    link: "https://marktwain.edu.ar/",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
