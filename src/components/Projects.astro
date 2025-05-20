@@ -9,6 +9,8 @@ import GitHub from "./icons/GitHub.astro";
 import Link from "./icons/Link.astro";
 import ReactIcon from "./icons/React.astro";
 import SassIcon from "./icons/Sass.astro";
+import Wordpress from "./icons/Wordpress.astro";
+
 const TAGS = {
   ASTRO: {
     name: "Astro",
@@ -21,6 +23,12 @@ const TAGS = {
     class:
       "inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-green-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black xs:px-2 xs:py-1 xs:text-sm xs:gap-1",
     icon: Html,
+  },
+  WORDPRESS: {
+    name: "WordPress",
+    class:
+      "inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-green-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black xs:px-2 xs:py-1 xs:text-sm xs:gap-1",
+    icon: Wordpress,
   },
   CSS: {
     name: "CSS",
@@ -55,6 +63,16 @@ const TAGS = {
 };
 
 const PROJECTS = [
+  {
+    title: "Lucia Navas - Pasteleria",
+    description:
+      "Ecommerce diseñado y desarrollado por mí. Incluye carrito de compras, y gestión de pedidos.",
+    link: "https://lucianavaspasteleria.com/",
+    github:
+      "https://github.com/sofinavas/ecommerce-pasteleria-wordpress/tree/main",
+    image: "/img/projects/pasteleria.jpg",
+    tags: [TAGS.WORDPRESS, TAGS.CSS],
+  },
   {
     title: "Mi Portfolio",
     description: "Created with Midu learning Astro and Tailwind CSS",

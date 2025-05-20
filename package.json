@@ -13,9 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.1",
+    "@astrojs/tailwind": "^6.0.2",
     "@fontsource-variable/onest": "^5.2.6",
-    "astro": "^5.5.4",
+    "astro": "^5.7.13",
     "astro-robots-txt": "^1.0.0"
   }
 }
